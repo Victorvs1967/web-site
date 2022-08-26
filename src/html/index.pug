@@ -1,0 +1,19 @@
+extends includes/_layout
+
+block title
+  title Vasilieva&K 
+
+block content 
+  #main.main
+    .main-t
+      .main-b
+        <!-- Slider -->
+        #slideshow.image-slider.swiper-container
+          ul.image-slider__wrapper.swiper-wrapper
+            <!-- Slides -->
+            each project in projects
+              each image in project.images
+                li.image-slider__slide.swiper-slide.item
+                  a(href=`/pages/${project.link}.html`)
+                    img(src=`@img/project-images/${image}.jpg`, alt= project.title)
+                    span.caption= project.title 

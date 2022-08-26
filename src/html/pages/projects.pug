@@ -1,0 +1,19 @@
+extends ./../includes/_layout
+
+block title
+  title Vasilieva&K 
+
+block content 
+  #main.main
+    .main-t
+      .main-b
+        #visual-holder
+          ul.image-list
+            each project in projects
+              li.image-list__link
+                a(href= project.link)
+                  img(src= '@img/' + project.image alt= project.title)
+                  div(class= project.text2 ? 'text' : 'text2')
+                    strong= project.title
+                    each text in project.text
+                      p= text

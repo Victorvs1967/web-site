@@ -1,0 +1,29 @@
+@import './includes/vars'
+@import './includes/fonts'
+@import './includes/mixins'
+@import './includes/reset'
+@import './includes/pages'
+
+@import 'node_modules/swiper/swiper'
+@import 'node_modules/swiper/swiper-bundle'
+
+html,
+body
+  scroll-behavior: smooth
+  font-family: 'Open Sans', sans-serif
+  font-size: 10px
+  line-height: 1.6
+  letter-spacing: 1px
+body
+  height: 100vh
+  font-size: 1.4rem
+  line-height: 1.6
+  color: $main-color
+  background: $main-background
+  a
+    color: $color-primary
+    text-decoration: none
+    &:hover
+      color: $color-secondary
+
+@import './includes/media'

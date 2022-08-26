@@ -1,0 +1,25 @@
+#header
+  position: relative
+  width: 100%
+  padding-bottom: 10px
+  &::after
+    content: ''
+    position: absolute
+    bottom: -5px
+    left: 5%
+    width: 90%
+    height: 1px
+    background: $color-gradient-1
+  .logo
+    position: relative
+    width: 146px
+    margin: 0 auto
+    overflow: hidden
+    text-indent: -9999px
+    a
+      display: block
+      height: 48px
+      opacity: .7
+      background: url('../img/logo-hover.jpg') no-repeat
+      &:hover
+        opacity: 1

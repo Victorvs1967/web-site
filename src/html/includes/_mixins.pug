@@ -1,0 +1,38 @@
+//- use svg icon from svg-sprite
+mixin svg-icon(image, cls='')
+  svg(class= cls)
+    use(xlink:href=`@img/icons/icons.svg#${image}` class=`icon__${image}`)
+
+mixin title(str)
+  h1(style="text-align: center;")= str
+
+mixin project(index= 0)
+  #main.main
+  .main-t
+    .main-b
+      <!-- Slider -->
+      #slideshow.image-slider.swiper-container
+        ul.image-slider__wrapper.swiper-wrapper
+          <!-- Slides -->
+          each image in projects[index].images
+            li.image-slider__slide.swiper-slide.item
+              .image-slider__image
+                a(href= '/pages/' + projects[index].link)
+                  img(src=`@img/project-images/${image}.jpg`, alt= projects[index].title)
+                  span.caption= projects[index].title 
+
+mixin staff(index= 0)
+  #main.main
+    .main-t
+      .main-b
+        .person-holder
+          a.avatar(href="team.html")
+            img(src= '@img/' + team[index].image, alt= team[index].name)
+          .about
+            .heading
+              strong
+                a(href= team[index].link)= team[index].name
+              <br>
+              span= team[index].speciality
+            .text
+              p= 'Education: ' + team[index].education

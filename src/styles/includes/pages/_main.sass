@@ -1,0 +1,40 @@
+.wrapper-holder
+  vertical-align: middle
+  #wrapper.wrapper
+    margin: 0 auto
+    max-width: 973px
+    min-height: 100%
+    padding: 40px 0 10px
+    overflow: hidden
+    .main
+      width: 100%
+      margin-bottom: 2rem
+      &-t
+        width: 973px
+        height: 510px
+        background: #111215
+        border-radius: .5rem
+        box-shadow: 0 0 20px #000
+        margin-top: 1rem
+      &-b
+        height: 100%
+        .image-slider
+          &__slide
+            text-align: center
+            background: #111215
+            opacity: 1
+            a
+              display: flex
+              flex-direction: column
+              align-items: center
+              img
+                height: 510px
+                max-width: 100%
+              span
+                position: absolute
+                bottom: -35px
+                background: $main-background
+          &__image
+            a
+              span
+                bottom: -30px

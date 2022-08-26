@@ -1,0 +1,19 @@
+extends ./../includes/_layout
+
+block title
+  title Vasilieva&K 
+
+block content 
+  #main.main
+    .main-t
+      .main-b
+        .team-holder
+          each member in team
+            div(class= member.right ? 'box-right' : 'box-left').box
+              a.avatar(href= member.link)
+                img.on(src= '@img/' + member.image alt= member.name)
+              .about
+                strong
+                  a(href= member.link)= member.name
+                <br>
+                span= member.speciality

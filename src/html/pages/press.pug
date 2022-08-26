@@ -1,0 +1,23 @@
+extends ./../includes/_layout
+
+block title
+  title Vasilieva&K 
+
+block content 
+  #main.main
+    .main-t
+      .main-b
+        .container
+          .container-holder
+            ul.press-list
+              each article in press
+                li
+                  a(href='press.html#')
+                    img(src= '@img/press-images/' + article.image alt= article.name)
+                  .press-info
+                    .info-frame
+                      a.image-close.btn-close(href='press.html#')
+                        img(src= '@img/press-images/' + article.imageInfo alt= article.name)
+                      .info-text
+                        p= article.name
+                        p= article.published

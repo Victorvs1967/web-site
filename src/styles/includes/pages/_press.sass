@@ -1,0 +1,65 @@
+.container
+  height: 496px
+  width: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+  &-holder
+    vertical-align: middle
+    text-align: center
+    .press-list
+      width: 480px
+      margin: 0 auto
+      padding: 0
+      display: grid
+      grid-template-columns: repeat(4, 1fr)
+      list-style: none
+      position: relative
+      li
+        filter: grayscale(100%)
+        opacity: .6
+        &:hover
+          filter: grayscale(0)
+          opacity: 1
+        .press-info
+          position: absolute
+          top: 0
+          left: -15px
+          width: 495px
+          height: 188px
+          display: none
+          text-align: left
+          .info-text
+            width: 260px
+            float: left
+            padding: 8px 0 0 17px
+            color: #fff
+            p
+              margin: 0
+          .btn-close
+            float: right
+            margin: 8px 8px 0 0
+            display: inline
+            color: #C09E95
+            height: auto
+          .image-close
+            width: 136px
+            float: left
+            margin: 0                    
+            img
+              display: block
+        &.active 
+          filter: grayscale(0)
+          opacity: 1
+          z-index: 100
+          .press-list
+            grid-template-columns: 1fr
+          .press-info
+            display: block
+            .info-frame
+              width: 100%
+              height: 100%
+              overflow: hidden
+              background: rgba(0, 0, 0, .8)
+        &.disable
+          display: none

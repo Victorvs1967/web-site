@@ -1,0 +1,9 @@
+header.header
+  #header
+    h1.logo
+      a(href="/index.html") Vasilyeva&amp;K
+  #footer.navigate
+    ul.nav
+      each item of menu
+        li
+          a(href=`/pages/${item}.html`)= item

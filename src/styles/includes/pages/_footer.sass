@@ -1,0 +1,27 @@
+#footer
+  position: relative
+  width: 100%
+  padding: 20px 0
+  &::after
+    content: ''
+    position: absolute
+    bottom: 20px
+    left: 5%
+    width: 90%
+    height: 1px
+    background: $color-gradient-1
+  &.navigate
+    .nav
+      margin: 5px 0 20px 15px
+      list-style: none
+      text-align: center
+      font-style: 1rem
+      li
+        display: inline
+        padding: 10px
+        a:hover,
+        &.active
+          a
+            color: color-secondary
+  &.footer-inner
+    margin: 13px 0 0 !important

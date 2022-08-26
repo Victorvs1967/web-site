@@ -1,0 +1,50 @@
+#visual-holder
+  width:  674px
+  margin: 0 auto
+  position: relative
+  .image-list
+    margin: 0
+    padding: 0
+    list-style: none
+    width: 100%
+    overflow: hidden
+    &:hover
+      img
+        opacity: .15
+    &__link
+      width: 336px
+      height: 247px
+      float: left
+      position: relative
+      padding: 0 1px 1px 0
+      margin: 0
+      a
+        display: block
+        img
+          display: block
+        .text, .text2
+          position: absolute
+          bottom: 5%
+          display: none
+          color: #fff
+          p
+            color: #fff
+            margin: 0 0 8px
+          strong
+            font-size: 16px
+            line-height: 19px
+            display: block
+            margin: 0 0 16px
+            font-weight: normal
+        .text
+          left: -14rem
+          text-align: right
+        .text2
+          right: -15rem
+          text-align: left
+      a:hover
+        img
+          opacity: 1
+        .text, 
+        .text2
+          display: block
