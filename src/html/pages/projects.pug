@@ -12,7 +12,7 @@ block content
             each project in projects
               li.image-list__link
                 a(href= project.link)
-                  img(src= '@img/' + project.image alt= project.title)
+                  img(src= '@img/' + project.image, alt= project.title)
                   div(class= project.text2 ? 'text' : 'text2')
                     strong= project.title
                     each text in project.text
