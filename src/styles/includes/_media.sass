@@ -62,7 +62,6 @@
 						display: block
 						img
 							display: block
-
 	.container
 		height: 100%
 		&-holder
@@ -78,3 +77,45 @@
 								width: 40%
 							.info-frame
 								width: 60%
+
+	.team-holder
+		width: 100%
+		margin: 0 auto
+		display: grid
+		grid-template-columns: 1fr 1fr
+		.about
+			width: 20rem
+			margin: -3px 0 0
+			width: 90%
+			margin: 0.5rem
+			font-size: 1.4rem
+			line-height: 1.4
+			overflow-wrap: break-word
+		a:hover
+			img
+				opacity: 1
+		.box-left
+			float: right
+			img
+				float: right
+			.about
+				padding: 0
+		.box-right
+			float: left
+			img
+				float: left
+			.about
+				padding: 0
+	.person-holder
+		padding: 12rem 0
+		display: flex
+		justify-content: center
+		column-gap: 2rem
+		.about
+			max-width: 42%
+			.heading
+				font-size: 1.6rem
+				margin-bottom: 1rem
+			.text
+				font-size: 1.2rem
+				color: #f0f0f0
