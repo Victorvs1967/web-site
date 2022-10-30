@@ -63,4 +63,18 @@
 						img
 							display: block
 
-	
+	.container
+		height: 100%
+		&-holder
+			.press-list
+				width: 100%
+				grid-template-columns: repeat(2, 1fr)
+				li
+					&.active 
+						.press-info
+							display: block
+							height: 100%
+							.info-text
+								width: 40%
+							.info-frame
+								width: 60%
