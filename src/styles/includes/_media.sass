@@ -13,55 +13,52 @@
 		padding: 0
 	#footer.navigate
 		.nav
-			margin: 0 0 4rem 0
-			padding: .5rem 0 4rem 1.5rem
-			font-size: 1.3rem
+			margin: 0
+			padding: .5rem 0 2rem 0
+			font-size: 1.6rem
 	.wrapper
 		&-holder
 			max-width: 90vw
 			.main
+				width: 100%
 				&-t
+					width: 90vw
+				&-b
 					width: 100%
+					#visual-holder
+						width:  96%
+						height: 100%
+						margin: 0 auto
+						position: relative
+						.image-list
+							width: 100%
+							margin: 0
+							padding: 0
+							list-style: none
+							overflow: hidden
+							img
+								height: 100%
+								object-fit: cover
+								object-position: center
+							&__link
+								width: 50%
+								height: 50%
+								float: left
+								position: relative
+								padding: 0 1px 1px 0
+								margin: 0
+								a
+									display: block
+									img
+										display: block
 
 // Smartphone view
 @media(max-width: $mobile)
 	#footer.navigate
 		.nav
-			margin: 0
-			padding: .5rem 0 2rem 0
 			font-size: 1.4rem
 			li
 				padding: .5rem
-	.wrapper
-		margin: 0 auto
-		.main
-			width: 90vw
-		#visual-holder
-			width:  96%
-			height: 100%
-			margin: 0 auto
-			position: relative
-			.image-list
-				width: 100%
-				margin: 0
-				padding: 0
-				list-style: none
-				overflow: hidden
-				img
-					height: 100%
-					object-fit: cover
-					object-position: center
-				&__link
-					width: 50%
-					height: 50%
-					float: left
-					position: relative
-					padding: 0 1px 1px 0
-					margin: 0
-					a
-						display: block
-						img
-							display: block
 	.container
 		height: 100%
 		&-holder
@@ -77,7 +74,6 @@
 								width: 40%
 							.info-frame
 								width: 60%
-
 	.team-holder
 		width: 100%
 		margin: 0 auto
