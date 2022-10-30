@@ -1,40 +1,40 @@
 // Tablet view
 @media(max-width: $tablet)
-	html
-		font-size: 2rem
-	#wrapper
-		margin: 0 auto
-		max-width: 960px
+	.wrapper
+		&-holder
+			max-width: 90vw
+			.main
+				width: 100%
+				margin-bottom: 2rem
+				&-t
+					width: 100%
 	.logo
 		margin: 0 auto
-		/* text-indent: -9999px */
-		/* overflow: hidden */
-		width: 146px
+		width: 14.6rem
 	.logo a
 		display: block
 		background: url(@img/logo.jpg) no-repeat
-		/* background-size: cover */
-		height: 60px
+		height: 6rem
 	.logo a:hover
 		background: url(@img/logo-hover.jpg) no-repeat
-	#slideshow
-		height: 680px
 	#slideshow ul
-		margin: 20%
 		padding: 0
-	#footer .nav
-		margin: 0 0 40px 0
-		padding: 5px 0 40px 15px
-		font-size: 1.3rem
+	#footer.navigate
+		.nav
+			margin: 0 0 4rem 0
+			padding: .5rem 0 4rem 1.5rem
+			font-size: 1.3rem
 
 // Smartphone view
 @media(max-width: $mobile)
-	html
-		font-size: 1em
-	.wrapper-holder
+	.wrapper
 		margin: 0 auto
-		max-width: 28em
-	#footer .nav
-		margin: 0
-		padding: 5px 0 40px 0
-		font-size: 1rem
+		.main
+			width: 90vw
+	#footer.navigate
+		.nav
+			margin: 0
+			padding: .5rem 0 4rem 0
+			font-size: 1.4rem
+			li
+				padding: .5rem
