@@ -24,6 +24,7 @@
 				&-t
 					width: 90vw
 				&-b
+					position: relative
 					width: 100%
 					#visual-holder
 						width:  96%
@@ -37,6 +38,7 @@
 							list-style: none
 							overflow: hidden
 							img
+								width: 100%
 								height: 100%
 								object-fit: cover
 								object-position: center
@@ -52,11 +54,16 @@
 									img
 										display: block
 	.container
+		position: relative
+		height: 100%
 		&-holder
-			.press-list
-				margin-top: 30%
+			position: absolute
+			top: 50%
+			transform: translateY(-50%)
 	.team-holder
-		transform: translateY(90%)
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
 
 // Smartphone view
 @media(max-width: $smartphone)
@@ -66,7 +73,6 @@
 			li
 				padding: .5rem
 	.container
-		height: 100%
 		&-holder
 			.press-list
 				width: 100%
@@ -83,7 +89,6 @@
 	.team-holder
 		width: 100%
 		margin: 0 auto
-		transform: translateY(20%)
 		display: grid
 		grid-template-columns: 1fr 1fr
 		.about
@@ -112,4 +117,17 @@
 
 @media(max-width: $mobile)
 	.team-holder
-		transform: translateY(7%)
+		.box-right,
+		.box-left
+			img
+				width: 60%
+@media(max-height: 400px)
+	.team-holder
+		.box-right,
+		.box-left
+			img
+				width: 22%
+			.about
+				padding: 4px
+				font-size: 1.1rem
+				line-height: 1.1
