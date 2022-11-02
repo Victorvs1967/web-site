@@ -86,32 +86,33 @@
 								width: 40%
 							.info-frame
 								width: 60%
-	.team-holder
-		width: 100%
-		margin: 0 auto
-		display: grid
-		grid-template-columns: 1fr 1fr
-		.about
+	.main-b
+		.team-holder
 			width: 100%
-			margin: 0.5rem
-			font-size: 1.4rem
-			line-height: 1.4
-			overflow-wrap: break-word
-		a:hover
-			img
-				opacity: 1
-		.box-left
-			float: right
-			img
+			margin: 0 auto
+			display: grid
+			grid-template-columns: 1fr 1fr
+			.about
+				width: 100%
+				margin: 0.5rem
+				font-size: 1.4rem
+				line-height: 1.4
+				overflow-wrap: break-word
+			a:hover
+				img
+					opacity: 1
+			.box-left
 				float: right
-			.about
-				padding: 0
-		.box-right
-			float: left
-			img
+				img
+					float: right
+				.about
+					padding: 0
+			.box-right
 				float: left
-			.about
-				padding: 0
+				img
+					float: left
+				.about
+					padding: 0
 
 @media(max-width: $mobile)
 	.team-holder
@@ -120,12 +121,13 @@
 			img
 				width: 60%
 @media(max-height: 500px)
-	.team-holder
-		.box-right,
-		.box-left
-			img
-				width: 25%
-			.about
-				padding: 4px
-				font-size: 1.1rem
-				line-height: 1.1
+	.main-b
+		.team-holder
+			.box-right,
+			.box-left
+				img
+					width: 25%
+				.about
+					padding: 8px 4px
+					font-size: 1.1rem
+					line-height: 1.1
