@@ -1,46 +1,53 @@
-.team-holder
-  width: 100%
-  margin: 0 auto
-  transform: translateY(50%)
-  display: grid
-  grid-template-columns: 1fr 1fr
-  .about
-    width: 20rem
-    margin: -3px 0 0
-  a:hover
-    img
-      opacity: 1
-  .box-left
+.main-b
+  position: relative
+  .team-holder
     width: 100%
-    float: right
-    overflow: hidden
-    img
-      float: right
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    display: grid
+    grid-template-columns: 1fr 1fr
     .about
+      width: 20rem
+      margin: -3px 0 0
+    a:hover
+      img
+        opacity: 1
+    .box-left
+      width: 100%
       float: right
-      padding-right: 2.5rem
-      text-align: right
-  .box-right
-    width: 100%
-    float: left
-    overflow: hidden
-    img
+      overflow: hidden
+      img
+        float: right
+      .about
+        float: right
+        padding-right: 2.5rem
+        text-align: right
+    .box-right
+      width: 100%
       float: left
-      margin-left: 1px
-      display: inline-block
+      overflow: hidden
+      img
+        float: left
+        margin-left: 1px
+        display: inline-block
+      .about
+        float: left
+        padding-left: 2.5rem
+  .person-holder
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    display: flex
+    justify-content: center
+    column-gap: 2rem
     .about
-      float: left
-      padding-left: 2.5rem
-.person-holder
-  padding: 12rem 0
-  display: flex
-  justify-content: center
-  column-gap: 2rem
-  .about
-    max-width: 42%
-    .heading
-      font-size: 1.6rem
-      margin-bottom: 1rem
-    .text
-      font-size: 1.2rem
-      color: #f0f0f0
+      max-width: 42%
+      .heading
+        font-size: 1.6rem
+        margin-bottom: 1rem
+      .text
+        font-size: 1.2rem
+        color: #f0f0f0
